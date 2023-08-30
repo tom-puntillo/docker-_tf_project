@@ -27,5 +27,5 @@ output "private_db_subnet_2" {
 # Output for the ID of the custom VPC
 output "vpc_id" {
     description = "ID of custom VPC"
-    value = aws_vpc.week_22_vpc.id
+    value = aws_vpc.docker_vpc.id
 }
