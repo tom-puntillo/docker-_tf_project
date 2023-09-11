@@ -2,5 +2,5 @@
 
 // Define a variable named "vpc_id" with the type of string.
 variable "vpc_id" {
-    type = string
+  type = string
 }
