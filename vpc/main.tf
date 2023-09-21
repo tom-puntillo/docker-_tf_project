@@ -14,7 +14,7 @@ resource "aws_internet_gateway" "docker_igw" {
   vpc_id = aws_vpc.docker_vpc.id
 
   tags = {
-    Name = "week_22_igw"
+    Name = "docker_igw"
   }
 }
 
