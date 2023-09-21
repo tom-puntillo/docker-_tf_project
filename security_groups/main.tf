@@ -112,8 +112,8 @@ resource "aws_security_group" "jenkins_port" {
 
   ingress {
     description = "jenkins traffic"
-    from_port   = 2377
-    to_port     = 2377
+    from_port   = 8080
+    to_port     = 8080
     protocol    = "tcp"
     cidr_blocks = ["10.0.0.0/16"] # Allow traffic between manager nodes from the specified IP range
   }
