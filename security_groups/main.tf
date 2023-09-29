@@ -15,11 +15,11 @@ resource "aws_security_group" "allow_http" {
   }
 
   ingress {
-    description = "SSH from Anywhere"
+    description = "SSH from My PC"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # Allow SSH traffic from any IP address
+    cidr_blocks = ["73.0.169.120/32"] # Allow SSH traffic from any IP address
   }
 
   egress {
