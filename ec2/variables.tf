@@ -6,6 +6,11 @@ variable "user_data" {
   default = "IyEvYmluL2Jhc2gKCmFwdCB1cGRhdGUgLXkKYXB0IHVwZ3JhZGUgLXkKY3VybCAtZnNTTCBodHRwczovL2dldC5kb2NrZXIuY29tIC1vIGdldC1kb2NrZXIuc2gKc3VkbyBzaCBnZXQtZG9ja2VyLnNo"
 }
 
+variable "manager_user_data" {
+  type    = string
+  default = "IyEvYmluL2Jhc2gKCmFwdCB1cGRhdGUgLXkKYXB0IHVwZ3JhZGUgLXkKY3VybCAtZnNTTCBodHRwczovL2dldC5kb2NrZXIuY29tIC1vIGdldC1kb2NrZXIuc2gKc3VkbyBzaCBnZXQtZG9ja2VyLnNoCmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vdG9tLXB1bnRpbGxvL2RvY2tlcl9jb21wb3NlX2ZpbGVzLmdpdA=="
+}
+
 # Define a variable named "instance_type" of type string with a default value.
 variable "instance_type" {
   type    = string
