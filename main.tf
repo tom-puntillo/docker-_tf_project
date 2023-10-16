@@ -24,3 +24,7 @@ module "ec2_docker_ubuntu" {
   # Pass security groups for HTTP and TLS from the "security_groups" module
   security_groups = [module.security_groups.security_group_docker, module.security_groups.security_group_jenkins]
 }
+
+module "dynamodb" {
+  source = "./dynamodb"
+}
