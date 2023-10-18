@@ -15,4 +15,14 @@ resource "aws_dynamodb_table" "dynamodb-music-table" {
     name = "SongTitle"
     type = "S"
   }
+  
+   attribute {
+    name = "Album"
+    type = "S"
+  }
+
+  attribute {
+    name = "YearReleased"
+    type = "S"
+  }
 }
