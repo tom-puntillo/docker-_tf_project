@@ -15,14 +15,19 @@ resource "aws_dynamodb_table" "dynamodb-music-table" {
     name = "SongTitle"
     type = "S"
   }
-  
-   attribute {
+
+  attribute {
     name = "Album"
     type = "S"
   }
 
-  attribute {
-    name = "YearReleased"
-    type = "S"
-  }
+global_secondary_index {
+  name               = "SongTitleIndex"
+  hash_key           = "SongTitle"
+  range_key          = "Album"
+  write_capacity     = 10
+  read_capacity      = 10
+  projection_type    = "INCLUDE"
+  non_key_attributes = ["BandName"]
+}
 }
