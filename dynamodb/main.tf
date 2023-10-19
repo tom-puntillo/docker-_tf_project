@@ -38,7 +38,7 @@ resource "aws_dynamodb_table" "dynamodb-music-table" {
   }
 
   global_secondary_index {
-    name               = "SongTitleIndex"
+    name               = "AlbumIndex"
     hash_key           = "Album"
     range_key          = "YearReleased"
     write_capacity     = 10
