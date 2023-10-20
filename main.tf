@@ -28,3 +28,7 @@ module "ec2_docker_ubuntu" {
 module "dynamodb" {
   source = "./dynamodb"
 }
+
+module "s3" {
+  source = "./s3"
+}
